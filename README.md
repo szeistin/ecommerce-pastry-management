@@ -31,79 +31,60 @@ It was developed in multiple phases:
 
 ## ⚙️ How to Restore and Run the System
 
-Follow these steps to set up and run the database locally:
+### Restore the Database
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/your-repository-name.git
-Restore the Database
+1. Open **MySQL Workbench** or your preferred client.
+2. Import the backup SQL file from `/backups/backup.sql`:
+   ```sql
+   source path/to/backups/backup.sql;
 
-Open MySQL Workbench or your preferred client.
+## ⚙️ Configuration
 
-Import the backup SQL file from /backups/backup.sql.
+### Database Connection
+- Ensure your database is properly connected locally or via a cloud provider.
+- Adjust credentials if needed (e.g., in `.env` files or database config files).
 
-sql
-Copy
-Edit
-source path/to/backups/backup.sql;
-Configuration
+### Run the Application (Optional if Linked to Frontend/Backend)
+- If a backend application is available, run it accordingly.
+- Otherwise, manually test the database by executing sample queries.
 
-Ensure your database is properly connected locally or via a cloud provider.
+### Testing and Validation
+- Run sample SQL queries to ensure functionality.
+  - Example: Total sales per product
+  - Example: Total orders per customer
 
-Adjust credentials if needed (e.g., in .env or config files).
+---
 
-Run the Application (optional if linked to frontend/backend)
+## 🚀 Key Features and Functionalities
 
-If there's a backend app, run it accordingly.
+### Order Management
+- Add, update, view, and track customer orders.
 
-Test database queries manually or through integrated systems.
+### Customer Management
+- Maintain detailed customer profiles, contacts, and purchase history.
 
-Testing and Validation
+### Sales Reporting and Business Insights
+- Generate reports such as:
+  - Total sales per product
+  - Most purchased items
+  - Customer purchase patterns
 
-Run sample SQL queries to ensure functionality (e.g., total sales per product, total orders per customer).
+### Performance Optimization
+- Indexing of key tables for faster query performance.
+- Refactored and optimized SQL queries for improved data retrieval.
 
-🚀 Key Features and Functionalities
-Order Management
+### Backup and Recovery
+- Automated database backup system.
+- Recovery validation scripts provided to ensure data safety.
 
-Add, update, view, and track customer orders.
+### Cloud Hosting
+- Cloud deployment of the database for remote accessibility and scalability.
 
-Customer Management
+### Security Measures
+- Basic user access control and activity logging for enhanced security.
 
-Maintain detailed customer profiles, contacts, and purchase history.
 
-Sales Reporting and Business Insights
+## 📄 License
 
-Generate reports such as total sales per product, most purchased items, and customer purchase patterns.
-
-Performance Optimization
-
-Indexing of key tables for faster queries.
-
-Refactored queries for optimized data retrieval.
-
-Backup and Recovery
-
-Automated database backup system.
-
-Recovery validation scripts provided.
-
-Cloud Hosting
-
-Cloud deployment of the database for remote accessibility.
-
-Security Measures
-
-Basic user access control and logging.
-
-🖼️ Screenshots and Notes
-
-Screenshot	Description
-(👉 All screenshots are located in the /screenshots/ folder.)
-
-📄 License
-This project is licensed under the MIT License.
-See the LICENSE file for more details.
-
-yaml
-Copy
-Edit
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for more details.
